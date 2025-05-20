@@ -6,6 +6,9 @@ The current version of this document along with firmware example and tools can b
 
 https://github.com/efabless/caravel_board/tree/main/firmware/chipignite#readme
 
+![image](https://github.com/user-attachments/assets/7bf808eb-acbf-45d7-a23e-62ad8899b3b2)
+
+
 ## Hardware
 
 The development board provides an easy way to test your project.  The board has a socket for installing your part on a 
