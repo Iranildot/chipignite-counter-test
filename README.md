@@ -1,12 +1,19 @@
 # chipIgnite Bringup Testing
 
-This directory provides instruction and firmware for testing projects the chipIgnite shuttles.
+This repository will give you the step by step to test your caravel chipignite chip with a counter.
 
-The current version of this document along with firmware example and tools can be found at
+The following images will guide you through process and come from main source (Efabless repositories).
 
-https://github.com/efabless/caravel_board/tree/main/firmware/chipignite#readme
+First of all, you need to download the following repository:
 
-![image](https://github.com/user-attachments/assets/7bf808eb-acbf-45d7-a23e-62ad8899b3b2)
+Click this link to get there: https://github.com/riscv-collab/riscv-gnu-toolchain/tree/master
+
+![image](https://github.com/user-attachments/assets/597a7a8c-e34d-490a-879f-33604566112c)
+
+Then install prerequisits based on your Operating System:
+
+![image](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
+
 
 
 ## Hardware
