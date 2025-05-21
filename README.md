@@ -16,8 +16,6 @@ Then install prerequisits based on your Operating System:
 
 And to get the compiler run the following:
 
-![Uploading image.png…]()
-
 
 ## Hardware
 
