@@ -1,4 +1,4 @@
-# chipIgnite Bringup Testing
+# ChipIgnite Counter Test
 
 This repository will give you the step by step to test your caravel chipignite chip with a counter.
 
@@ -14,6 +14,9 @@ Then install prerequisits based on your Operating System:
 
 ![image](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
 
+And to get the compiler run the following:
+
+![Uploading image.png…]()
 
 
 ## Hardware
