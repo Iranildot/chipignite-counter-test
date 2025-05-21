@@ -12,6 +12,7 @@ Click this link to get there: https://github.com/riscv-collab/riscv-gnu-toolchai
 
 Then install prerequisits based on your Operating System:
 
-![image](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
+# ![image](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
 
 And to get the compiler run the following:
+
