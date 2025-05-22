@@ -54,8 +54,14 @@ For Linux users:
 
 ## 4. Build the Compiler
 
-Once you're inside the cloned `riscv-gnu-toolchain` folder, run the following command to build the compiler:
+Once you're inside the cloned `riscv-gnu-toolchain` folder, run the following command to build the compiler (maybe you will need to use sudo before make):
 
 ![Build Compiler](https://github.com/user-attachments/assets/0648ebd2-b563-4dd8-9d4f-d32e3be35101)
 
 ---
+
+Download this repository:
+
+```
+
+```
