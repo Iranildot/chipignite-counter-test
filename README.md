@@ -1,50 +1,50 @@
-# ChipIgnite Counter Test Guide
+# 🔧 ChipIgnite Counter Test Guide
 
-This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a counter module. The process includes visuals sourced from the official Efabless repositories to make each step easier to follow.
+This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a simple counter module. Images and procedures are based on official Efabless documentation.
 
 ---
 
-## 1. Clone the RISC-V GNU Toolchain Repository
+## 📦 1. Clone the RISC-V GNU Toolchain Repository
 
-To begin, you'll need to download the RISC-V toolchain:
+Start by cloning the official RISC-V GNU Toolchain repository:
 
-➡️ [riscv-gnu-toolchain GitHub Repository](https://github.com/riscv-collab/riscv-gnu-toolchain/tree/master)
+👉 [riscv-gnu-toolchain on GitHub](https://github.com/riscv-collab/riscv-gnu-toolchain/tree/master)
 
 ![Repository Screenshot](https://github.com/user-attachments/assets/597a7a8c-e34d-490a-879f-33604566112c)
 
 ---
 
-## 2. Install Prerequisites
+## ⚙️ 2. Install Prerequisites
 
-Install the required dependencies based on your operating system. Refer to the image below for guidance:
+Install the required packages based on your operating system. Refer to the image below for guidance:
 
 ![Install Dependencies](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
 
 ---
 
-## 3. Set Up the RISC-V Toolchain Path
+## 🛠️ 3. Set Up the RISC-V Toolchain Path
 
-Before installing the compiler, ensure the following directory is included in your system `PATH`:
+Before building the toolchain, make sure to add the following path to your environment:
 
 ```
 /opt/riscv/bin
 ```
 
-For Linux users:
+### On Linux
 
-1. Open your `.bashrc` file using your preferred text editor (e.g., `nano`, `vim`):
+1. Open your `.bashrc` file:
 
     ```bash
     nano ~/.bashrc
     ```
 
-2. Add the following line at the end of the file:
+2. Add the following line to the end of the file:
 
     ```bash
     export PATH="$PATH:/opt/riscv/bin"
     ```
 
-3. Save and close the file. Then, apply the changes:
+3. Save and apply the changes:
 
     ```bash
     source ~/.bashrc
@@ -52,46 +52,66 @@ For Linux users:
 
 ---
 
-## 4. Build the Compiler
+## 🧱 4. Build the RISC-V Compiler
 
-Once you're inside the cloned `riscv-gnu-toolchain` folder, run the following command to build the compiler (maybe you will need to use sudo before make):
+Navigate into the cloned `riscv-gnu-toolchain` directory and run:
+
+```bash
+make
+```
+
+> 💡 You might need to prefix the command with `sudo` depending on your system permissions.
 
 ![Build Compiler](https://github.com/user-attachments/assets/0648ebd2-b563-4dd8-9d4f-d32e3be35101)
 
 ---
 
-Clone this repository by runing:
+## 🧪 5. Set Up the Counter Test Project
 
-```
+Clone the test project repository:
+
+```bash
 git clone https://github.com/Iranildot/chipignite-counter-test.git
+cd chipignite-counter-test/counter
 ```
 
-Go inside counter folder.
+---
 
-open a terminal
+## 🐍 6. Set Up Python Environment
 
-Create a virtual environment
+Open a terminal and run the following:
 
-```
+### Create a Virtual Environment
+
+```bash
 python3 -m venv venv
 ```
 
-activate virtual environment
+### Activate the Environment
 
-```
+```bash
 source ./venv/bin/activate
 ```
 
-install pyftdi
+### Install Required Python Package
 
-```
+```bash
 pip3 install pyftdi
 ```
 
-Now you can run the following to compile your code:
+---
 
-```
+## 🚀 7. Compile and Flash the Project
+
+To build and flash your code onto the chip:
+
+```bash
 make clean flash
 ```
 
-OBS.: Maybe you need to push the reset button down before conecting your testing board to the computer then keep holding it down until you run ```make clean flash```
+> ⚠️ **Important:** You may need to press and hold the **reset button** on your board **before connecting it to your computer**, and continue holding it until the `make clean flash` command starts.
+
+---
+
+✅ You're now ready to run your counter test with ChipIgnite!
+
