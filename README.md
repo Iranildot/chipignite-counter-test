@@ -60,8 +60,25 @@ Once you're inside the cloned `riscv-gnu-toolchain` folder, run the following co
 
 ---
 
-Download this repository:
+Clone this repository by runing:
 
 ```
+git clone https://github.com/Iranildot/chipignite-counter-test.git
+```
+
+Go inside counter folder.
+
+open a terminal
+
+Create a virtual environment
 
 ```
+python3 -m venv venv
+```
+
+install pyftdi
+
+```
+pip3 install pyftdi
+```
+
