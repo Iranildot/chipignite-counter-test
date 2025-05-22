@@ -1,35 +1,61 @@
-# ChipIgnite Counter Test
+# ChipIgnite Counter Test Guide
 
-This repository will give you the step by step to test your caravel chipignite chip with a counter.
+This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a counter module. The process includes visuals sourced from the official Efabless repositories to make each step easier to follow.
 
-The following images will guide you through process and come from main source (Efabless repositories).
+---
 
-First of all, you need to download the following repository:
+## 1. Clone the RISC-V GNU Toolchain Repository
 
-Click this link to get there: https://github.com/riscv-collab/riscv-gnu-toolchain/tree/master
+To begin, you'll need to download the RISC-V toolchain:
 
-![image](https://github.com/user-attachments/assets/597a7a8c-e34d-490a-879f-33604566112c)
+➡️ [riscv-gnu-toolchain GitHub Repository](https://github.com/riscv-collab/riscv-gnu-toolchain/tree/master)
 
-Then install prerequisits based on your Operating System:
+![Repository Screenshot](https://github.com/user-attachments/assets/597a7a8c-e34d-490a-879f-33604566112c)
 
-![image](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
+---
 
-Before installing compiler you need to put this into your path: ```/opt/riscv/bin```. If you are a linux like you can do the following step.
+## 2. Install Prerequisites
 
-Open .bashrc file using your prefered text editor (nano, vim, stc.):
+Install the required dependencies based on your operating system. Refer to the image below for guidance:
+
+![Install Dependencies](https://github.com/user-attachments/assets/fad8ec0d-8645-4949-a0a7-10e923cedaba)
+
+---
+
+## 3. Set Up the RISC-V Toolchain Path
+
+Before installing the compiler, ensure the following directory is included in your system `PATH`:
 
 ```
-nano ~/.bashrc
+/opt/riscv/bin
 ```
 
-At the end of .bashrc file put:
+For Linux users:
 
-```
-export PATH="$PATH:/opt/riscv/bin"
-```
+1. Open your `.bashrc` file using your preferred text editor (e.g., `nano`, `vim`):
 
-then save the file.
+    ```bash
+    nano ~/.bashrc
+    ```
 
-And to get the compiler run the following (you must be inside riscv-gnu-toolchain folder):
+2. Add the following line at the end of the file:
 
-![get_compiler](https://github.com/user-attachments/assets/0648ebd2-b563-4dd8-9d4f-d32e3be35101)
+    ```bash
+    export PATH="$PATH:/opt/riscv/bin"
+    ```
+
+3. Save and close the file. Then, apply the changes:
+
+    ```bash
+    source ~/.bashrc
+    ```
+
+---
+
+## 4. Build the Compiler
+
+Once you're inside the cloned `riscv-gnu-toolchain` folder, run the following command to build the compiler:
+
+![Build Compiler](https://github.com/user-attachments/assets/0648ebd2-b563-4dd8-9d4f-d32e3be35101)
+
+---
