@@ -1,6 +1,6 @@
 # 🔧 ChipIgnite Counter Test Guide
 
-This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a simple counter module. Images and procedures are based on official Efabless documentation.
+This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a simple counter module. Images and procedures are based on official Efabless and RISC-V Collaboration documentations.
 
 ---
 
