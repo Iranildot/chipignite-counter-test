@@ -76,9 +76,22 @@ Create a virtual environment
 python3 -m venv venv
 ```
 
+activate virtual environment
+
+```
+source ./venv/bin/activate
+```
+
 install pyftdi
 
 ```
 pip3 install pyftdi
 ```
 
+Now you can run the following to compile your code:
+
+```
+make clean flash
+```
+
+OBS.: Maybe you need to push the reset button down before conecting your testing board to the computer then keep holding it down until you run ```make clean flash```
