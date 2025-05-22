@@ -6,7 +6,7 @@ ARCH=rv32i_zicsr
 
 .SUFFIXES:
 
-PATTERN = teste
+PATTERN = counter
 
 hex:  ${PATTERN:=.hex}
 
