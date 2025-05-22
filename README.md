@@ -57,7 +57,8 @@ Before building the toolchain, make sure to add the following path to your envir
 Navigate into the cloned `riscv-gnu-toolchain` directory and run:
 
 ```bash
-make
+./configure --prefix=/opt/riscv
+sudo make
 ```
 
 > 💡 You might need to prefix the command with `sudo` depending on your system permissions.
