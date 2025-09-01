@@ -1,7 +1,7 @@
 # 🔧 ChipIgnite Counter Test Guide
 
-This guide provides step-by-step instructions for testing your **Caravel ChipIgnite** chip using a simple counter module. Images and procedures are based on official Efabless and RISC-V Collaboration documentations.
-
+This guide provides step-by-step instructions for testing your Caravel ChipIgnite chip using a simple counter module. The images and procedures are based on official documentation from Efabless and the RISC-V Collaboration.
+The firmware used in this repository was slightly adapted from caravel_user_project/verilog/dv/io_ports/io_ports.c to test the chip.
 ---
 
 ## 📦 1. Clone the RISC-V GNU Toolchain Repository
